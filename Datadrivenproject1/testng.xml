@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="cup">
+  <parameter name="Username" value="admin"></parameter>
+   <parameter name="Password" value="test"></parameter>
+  
+    <classes>
+      <class name="LoginTestcase.Correctusernamenandpassword"/>
+      </classes>
+      </test>
+      
+       <test thread-count="5" name="cu">
+        <parameter name="Username" value="admin"></parameter>
+   <parameter name="Password" value="test1"></parameter>
+ 
+    <classes>
+     <class name="LoginTestcase.CorrectUsername"/>
+      </classes>
+      </test>
+      
+        <test thread-count="5" name="cp">
+ <parameter name="Username" value="admin1"></parameter>
+   <parameter name="Password" value="test"></parameter>
+  
+    <classes>
+   <class name="LoginTestcase.Correctpassword"/>
+      </classes>
+      </test>
+     
+      
+      
+        <test thread-count="5" name="wup">
+         <parameter name="Username" value="admin1"></parameter>
+   <parameter name="Password" value="test1"></parameter>
+  
+    <classes>
+     <class name="LoginTestcase.Bothwrongup"/>
+      </classes>
+      </test>
+    
+   
+</suite> <!-- Suite -->
